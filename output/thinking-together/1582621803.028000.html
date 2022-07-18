@@ -45,7 +45,7 @@ Ruby is so delightfully unsound: perpetually punting on precision and completene
     <td style="vertical-align:top; padding-bottom:1em; padding-left:1em">
 <b>William Taysom</b>
 <span style="margin:2em; color:#606060">2020-02-25 05:31</span><br/>
-For example, here's one that broke me — just now.  After writing it thousands of times, I cannot type this idiom anymore:<br/><pre>hash_mapping_x_to_fx = Hash[xs.map{|x| [x, f(x)]] <pre><br/>From now on, I'm going with:<br/></pre>hash_mapping_x_to_fx = xs.hap{|x| f(x)}</pre><br/>Remember "Ruby was a Lisp originally, in theory."  So the definition, for those unfamiliar, can be simple as:<br/><pre>module Enumerable<br/>  def hap<br/>    Hash[map{|x| [x, yield(x)]}]<br/>  end<br/>end</pre>
+For example, here's one that broke me — just now.  After writing it thousands of times, I cannot type this idiom anymore:<br/><pre>hash_mapping_x_to_fx = Hash[xs.map{|x| [x, f(x)]] </pre><br/>From now on, I'm going with:<br/><pre>hash_mapping_x_to_fx = xs.hap{|x| f(x)}</pre><br/>Remember "Ruby was a Lisp originally, in theory."  So the definition, for those unfamiliar, can be simple as:<br/><pre>module Enumerable<br/>  def hap<br/>    Hash[map{|x| [x, yield(x)]}]<br/>  end<br/>end</pre>
     </td>
   </tr>
   <tr>

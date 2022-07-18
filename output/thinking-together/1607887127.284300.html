@@ -115,7 +115,7 @@ The more I think about this, the more I want the stack to be horizontal instead 
     <td style="vertical-align:top; padding-bottom:1em; padding-left:1em">
 <b>Kartik Agaram</b>
 <span style="margin:2em; color:#606060">2020-12-14 19:45</span><br/>
-Also interesting to see how they chose to reword Unix commands for the documentary:<br/><br/><pre>makewords file |lowercase |sort |unique |mismatches<pre><br/>I believe this would in reality have been something like:<br/><br/></pre>sed 's/ /\n/g' |tr A-Z a-z |sort |uniq |grep -vf dictionary</pre><br/>(The <tt>sed</tt> could also be replaced by a call to <tt>awk</tt>. <tt>sed</tt> was created in 1973, and <tt>awk</tt> in 1977.)
+Also interesting to see how they chose to reword Unix commands for the documentary:<br/><br/><pre>makewords file |lowercase |sort |unique |mismatches</pre><br/>I believe this would in reality have been something like:<br/><br/><pre>sed 's/ /\n/g' |tr A-Z a-z |sort |uniq |grep -vf dictionary</pre><br/>(The <tt>sed</tt> could also be replaced by a call to <tt>awk</tt>. <tt>sed</tt> was created in 1973, and <tt>awk</tt> in 1977.)
     </td>
   </tr>
   <tr>

@@ -105,7 +105,7 @@ no promise that it is an internally consistent doc :smile:
     <td style="vertical-align:top; padding-bottom:1em; padding-left:1em">
 <b>Doug Moen</b>
 <span style="margin:2em; color:#606060">2020-01-30 18:27</span><br/>
-The most surprising thing about the syntax, so far, is function calls,<br/><pre>foo(a b c)<pre><br/>given that C, Java, Javascript and Python all use `foo(a,b,c)`.
+The most surprising thing about the syntax, so far, is function calls,<br/><pre>foo(a b c)</pre><br/>given that C, Java, Javascript and Python all use <tt>foo(a,b,c)</tt>.
     </td>
   </tr>
   <tr>
@@ -189,7 +189,7 @@ you could omit one pair of parens around g(x) unless i’m mistaken? and perhaps
     <td style="vertical-align:top; padding-bottom:1em; padding-left:1em">
 <b>Doug Moen</b>
 <span style="margin:2em; color:#606060">2020-01-31 07:17</span><br/>
-&gt; you could omit one pair of parens around g(x) unless i’m mistaken?<br/>I don't think you can do that. Consider<br/><pre>f((g(x+y)))<pre><br/>If you omit one pair of parens, then you get<br/></pre>f(g(x+y))</pre><br/>which I think is a call to <tt>f</tt> with two arguments, <tt>g</tt> and <tt>(x+y)</tt>, unless white space is significant in the parsing.
+&gt; you could omit one pair of parens around g(x) unless i’m mistaken?<br/>I don't think you can do that. Consider<br/><pre>f((g(x+y)))</pre><br/>If you omit one pair of parens, then you get<br/><pre>f(g(x+y))</pre><br/>which I think is a call to <tt>f</tt> with two arguments, <tt>g</tt> and <tt>(x+y)</tt>, unless white space is significant in the parsing.
     </td>
   </tr>
   <tr>

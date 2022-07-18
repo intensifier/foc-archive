@@ -129,7 +129,7 @@ APL has nothing to do with Chinese. APL is extended mathematical notation. The i
     <td style="vertical-align:top; padding-bottom:1em; padding-left:1em">
 <b>Doug Moen</b>
 <span style="margin:2em; color:#606060">2019-12-03 17:32</span><br/>
-> you have to read it right to left, which is foreign to all normal people<br/>In standard mathematical notation, function call notation is read right to left:<br/><pre>   h(g(f(x)))<pre><br/>In languages from the APL family, you use exactly the same notation, but the parentheses are optional, so you can also write:<br/></pre>   h g f x</pre><br/>If you really believe that the problem with the above notation is that it is read right to left, then you should change Beads to have left-to-right function call notation.
+> you have to read it right to left, which is foreign to all normal people<br/>In standard mathematical notation, function call notation is read right to left:<br/><pre>   h(g(f(x)))</pre><br/>In languages from the APL family, you use exactly the same notation, but the parentheses are optional, so you can also write:<br/><pre>   h g f x</pre><br/>If you really believe that the problem with the above notation is that it is read right to left, then you should change Beads to have left-to-right function call notation.
     </td>
   </tr>
   <tr>
@@ -141,7 +141,7 @@ APL has nothing to do with Chinese. APL is extended mathematical notation. The i
     <td style="vertical-align:top; padding-bottom:1em; padding-left:1em">
 <b>Doug Moen</b>
 <span style="margin:2em; color:#606060">2019-12-03 18:05</span><br/>
-Also related to right-to-left evaluation:<br/>My language, Curv, is a pure functional language, and programs often consist of deeply nested function calls. A single expression can be spread over many lines. Reading such programs bottom-to-top and right-to-left is a problem, so I introduced left-to-right function call notation, which in my case looks like this:<br/><pre>x &gt;&gt; f &gt;&gt; g &gt;&gt; h    is the same as    h(g(f(x))<pre><br/>In practice, programs written in this style feel just like pipelines in the Unix shell. It's nice. Many other functional languages also have a left-to-right pipeline operator.
+Also related to right-to-left evaluation:<br/>My language, Curv, is a pure functional language, and programs often consist of deeply nested function calls. A single expression can be spread over many lines. Reading such programs bottom-to-top and right-to-left is a problem, so I introduced left-to-right function call notation, which in my case looks like this:<br/><pre>x &gt;&gt; f &gt;&gt; g &gt;&gt; h    is the same as    h(g(f(x))</pre><br/>In practice, programs written in this style feel just like pipelines in the Unix shell. It's nice. Many other functional languages also have a left-to-right pipeline operator.
     </td>
   </tr>
   </table>

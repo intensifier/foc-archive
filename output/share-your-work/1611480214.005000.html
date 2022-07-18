@@ -21,7 +21,7 @@
     <td style="vertical-align:top; padding-bottom:1em; padding-left:1em">
 <b>Emmanuel Oga</b>
 <span style="margin:2em; color:#606060">2021-01-24 01:28</span><br/>
-The "query API" is is just a bunch of methods <tt>filter</tt> and <tt>props</tt>. With these source triples:<br/><pre> :me<br/>  rdf:type schema:Person;<br/>  schema:name "Emmanuel Oga";<br/>  schema:familyName "Oga";<br/>  schema:givenName "Emmanuel";<br/>  schema:jobTitle "Software Engineer";<br/>  schema:knowsLanguage "en-US", "es-ES".</pre><br/>I can find my name like this:<br/><pre>val name = qs.filter(s = ":me").props("schema:name") // -&gt; returns "Emmanuel Oga"<pre>
+The "query API" is is just a bunch of methods <tt>filter</tt> and <tt>props</tt>. With these source triples:<br/><pre> :me<br/>  rdf:type schema:Person;<br/>  schema:name "Emmanuel Oga";<br/>  schema:familyName "Oga";<br/>  schema:givenName "Emmanuel";<br/>  schema:jobTitle "Software Engineer";<br/>  schema:knowsLanguage "en-US", "es-ES".</pre><br/>I can find my name like this:<br/><pre>val name = qs.filter(s = ":me").props("schema:name") // -&gt; returns "Emmanuel Oga"</pre>
     </td>
   </tr>
   <tr>
